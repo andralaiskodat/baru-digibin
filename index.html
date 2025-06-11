@@ -2,6 +2,15 @@
 <html>
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3YRLW6P36K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-3YRLW6P36K');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
@@ -16,7 +25,7 @@
                     <div class="frame">
                         <div class="page">
                             <div class="div">
-                                <p class="text-wrapper">Sejarah Bakmi Pak Sandiyo Legendaris</p>
+                                <p id="Sejarah" class="text-wrapper">Sejarah Bakmi Pak Sandiyo Legendaris</p>
                                 <p class="p">
                                     Bakmi Pak Sandiyo Legendaris berdiri sejak tahun 1995, bermula dari sebuah dapur
                                     sederhana di daerah
@@ -49,22 +58,26 @@
                     <div class="page-wrapper">
                         <div class="overlap-group-wrapper">
                             <div class="overlap-2">
-                                <div class="text-wrapper-2">Bakmi Pak Sandiyo legendaris</div>
-                                <img class="img" src="img/mbahkakung1.png" />
                                 <div class="overlap-3">
                                     <img class="mbahkakung-2" src="img/mbahkakung1.png" />
-                                    <div class="navbar">
-                                        <div class="text-wrapper-3">Home</div>
-                                        <div class="text-wrapper-4">About</div>
-                                        <div class="text-wrapper-5">Rating</div>
-                                        <div class="text-wrapper-6">Contact</div>
-                                        <div class="text-wrapper-7">Menu</div>
-                                    </div>
-                                    <div class="navigation-button">
-                                        <div class="overlap-group-2">
-                                            <div class="text-wrapper-8">Cari produk disini......</div>
-                                            <img class="cari" src="img/cari.png" />
+                                    <div class="navbar2">
+                                        <div class="text-wrapper-2">Bakmi Pak Sandiyo legendaris</div>
+                                        <img class="img" src="img/logoatas.png" />
+                                        <a href="https://maps.app.goo.gl/Q53ySEk7y8a8t9po7">
+                                            <img class="lokasi" src="img/gmap.png" />
+                                        </a>
+                                        <div class="navbar">
+                                            <div class="text-wrapper-3"> <a href="#beranda" style="color: black;">Beranda</a></div>
+                                            <div class="text-wrapper-4"><a href="#Sejarah" style="color: black;">Tentang</a></div>
+                                            <div class="text-wrapper-5"><a href="#rating" style="color: black;">Rating</a></div>
+                                            <div class="text-wrapper-6"><a href="#kontak" style="color: black;">Kontak</a></div>
+                                            <div class="text-wrapper-7"><a href="#menu" style="color: black;">Menu</a></div>
                                         </div>
+                                    </div>
+                                    <div id="beranda" class="judul-wrapper">
+                                        <h1 class="judul-utama">Bakmi <strong>Pak Sandiyo</strong></h1>
+                                        <h2 class="judul-sub">Bakmi Jawa</h2>
+                                        <h2 class="judul-sub">Legendaris</h2>
                                     </div>
                                     <p class="sejak-cita-rasa">
                                         Sejak 1995, Cita Rasa Kuat yang Melegenda.<br />Sudah lebih dari dua dekade,
@@ -74,11 +87,14 @@
                                         suapan menghadirkan rasa kuat, gurih, dan membuat siapapun ingin kembali lagi.
                                     </p>
                                     <div class="div-wrapper">
-                                        <div class="overlap-4">
-                                            <img class="rectangle" src="img/rectangle-4.svg" />
-                                            <div class="text-wrapper-9">Pesan sekarang</div>
-                                            <img class="gofood" src="img/gofood.png" />
-                                        </div>
+                                        <a
+                                            href="https://gofood.co.id/yogyakarta/restaurant/bakmi-pak-sandiyo-legendaris-paker-pete-rt-o6-mulyodadi-7200de6e-b1a5-4555-9a55-047cb6546024?ot=eyJtZXJjaGFudF9pZCI6IjU5YTc2ZTAzLTM3NTMtNDZiYS05NzNhLTEyZjliNDRhM2VjOCIsInVzZXJfaWQiOiIwIiwiZXhwaXJ5X3RpbWVfZXBvY2giOjE3MzUxOTEwNzEsImRlbGl2ZXJ5X3ByaWNlIjoxMDAwLCJwYXJraW5nX2ZlZSI6MCwiZXRhX2J1ZmZlcl9taW5zIjo3LCJjdXN0b21lcl9sb2NhdGlvbiI6Ii02LjE4MjMxMywxMDYuODM2NDY0NiJ9.tcWa9fDYDcEro7vbl9+jofelj0nZGzUaQLzXxWD4y28%3D ">
+                                            <div class="overlap-4">
+                                                <img class="rectangle" src="img/Rectangle4.svg" />
+                                                <div class="text-wrapper-9">Pesan sekarang</div>
+                                                <img class="gofood" src="img/gofood.png" />
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -89,7 +105,7 @@
                             <div class="overlap-5">
                                 <div class="group">
                                     <div class="overlap-group-3">
-                                        <div class="text-wrapper-10">Menu Spesial</div>
+                                        <div id="menu" class="text-wrapper-10">Menu Spesial</div>
                                     </div>
                                 </div>
                                 <img class="shape" src="img/shape2.png" />
@@ -97,20 +113,20 @@
                                     <div class="overlap-6">
                                         <div class="group-2">
                                             <div class="overlap-group-4">
-                                                <img class="rectangle-2" src="img/rectangle7.svg" />
+                                                <img class="rectangle-2" src="img/Rectangle7.svg" />
                                                 <img class="desain-tanpa-judul" src="img/migodok.png" />
                                                 <div class="text-wrapper-11">Bakmi Godok</div>
                                                 <div class="text-wrapper-12">Rp18.000,00</div>
-                                                <img class="price" src="img/price-4.png" />
+                                                <img class="price" src="img/Price.png" />
                                             </div>
                                         </div>
                                         <div class="group-3">
                                             <div class="overlap-group-4">
-                                                <img class="rectangle-3" src="img/rectangle10.svg" />
+                                                <img class="rectangle-3" src="img/Rectangle10.svg" />
                                                 <img class="desain-tanpa-judul" src="img/migoreng.png" />
                                                 <div class="text-wrapper-11">Bakmi Jawa Goreng</div>
                                                 <div class="text-wrapper-12">Rp18.000,00</div>
-                                                <img class="price-2" src="img/price-1.png" />
+                                                <img class="price-2" src="img/Price.png" />
                                             </div>
                                         </div>
                                         <div class="group-4">
@@ -119,7 +135,7 @@
                                                 <img class="desain-tanpa-judul" src="img/nasigoreng.png" />
                                                 <div class="text-wrapper-11">Nasi Gorang jawa</div>
                                                 <div class="text-wrapper-12">Rp18.000,00</div>
-                                                <img class="price-3" src="img/price-2.png" />
+                                                <img class="price-3" src="img/Price.png" />
                                             </div>
                                         </div>
                                         <div class="group-5">
@@ -128,16 +144,16 @@
                                                 <img class="desain-tanpa-judul" src="img/segogodok.png" />
                                                 <div class="text-wrapper-13">Sego Godok</div>
                                                 <div class="text-wrapper-14">Rp18.000,00</div>
-                                                <img class="price-4" src="img/price-3.png" />
+                                                <img class="price-4" src="img/Price.png" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="navigation-button-2">
                                     <div class="overlap-4">
-                                        <img class="rectangle" src="img/image.svg" />
+                                        <img class="rectangle" src="img/Rectangle4.svg" />
                                         <div class="text-wrapper-9">Pesan sekarang</div>
-                                        <img class="gofood" src="img/image.png" />
+                                        <img class="gofood" src="img/gofood.png" />
                                     </div>
                                 </div>
                             </div>
@@ -153,59 +169,74 @@
                                     <img class="masakan" src="img/masakan.png" />
                                     <div class="frame-wrapper">
                                         <div class="group-wrapper">
-                                            <div class="group-6">
-                                                <div class="group-7">
-                                                    <div class="overlap-group-5">
-                                                        <img class="ulasan-2" src="img/ulasan-2-2.svg" />
-                                                        <img class="testi" src="img/testi2-1-2.png" />
-                                                        <img class="stars" src="img/stars-2-2.png" />
-                                                        <p class="bakmi-disini-adalah">
-                                                            Bakmi disini adalah bakmi putih ato bihun yg tersaji lezat,,
-                                                            dan keramahan bapak ibu
-                                                            penjual menjadi ciri khas tersendiri... Teh gula batu
-                                                            terhidang lengkap dengan
-                                                            &#34;jog&nbsp;&nbsp;blirik&#34; klasik, menambah cita rasa
-                                                            mantap... Mempunyai penggemar
-                                                            dan pelanggan setia, terlayani hingga tengah malam...
-                                                            bernuansa pedesaan asli melengkapi
-                                                            atmosfir klasik yg original...
-                                                        </p>
-                                                        <div class="text-wrapper-15">Bayu Hapsoro</div>
-                                                        <div class="text-wrapper-16">2021</div>
-                                                    </div>
-                                                </div>
-                                                <div class="group-8">
-                                                    <div class="overlap-group-5">
-                                                        <img class="ulasan-2" src="img/ulasan-1.svg" />
-                                                        <img class="testi-2" src="img/testi1-1.png" />
-                                                        <img class="stars-2" src="img/stars-1.png" />
-                                                        <p class="text-wrapper-17">
-                                                            Makan bakmi jawa godog dan rica balungan di tengah desa.
-                                                            Bakul e super ramah dan bisa
-                                                            diajak curhat
-                                                        </p>
-                                                        <div class="text-wrapper-18">Aloysia Yossy</div>
-                                                        <div class="text-wrapper-19">2024</div>
-                                                    </div>
-                                                </div>
-                                                <div class="group-9">
-                                                    <div class="overlap-group-5">
-                                                        <img class="ulasan-2" src="img/ulasan-2.svg" />
-                                                        <img class="testi" src="img/testi2-1.png" />
-                                                        <img class="stars" src="img/stars-2.png" />
-                                                        <p class="bakmi-disini-adalah">
-                                                            Bakmi disini adalah bakmi putih ato bihun yg tersaji lezat,,
-                                                            dan keramahan bapak ibu
-                                                            penjual menjadi ciri khas tersendiri... Teh gula batu
-                                                            terhidang lengkap dengan
-                                                            &#34;jog&nbsp;&nbsp;blirik&#34; klasik, menambah cita rasa
-                                                            mantap... Mempunyai penggemar
-                                                            dan pelanggan setia, terlayani hingga tengah malam...
-                                                            bernuansa pedesaan asli melengkapi
-                                                            atmosfir klasik yg original...
-                                                        </p>
-                                                        <div class="text-wrapper-15">Bayu Hapsoro</div>
-                                                        <div class="text-wrapper-16">2021</div>
+                                            <div class="ulasan-wrapper">
+                                                <div class="ulasan-track">
+                                                    <div class="group-6">
+                                                        <div class="group-7">
+                                                            <div class="overlap-group-5">
+                                                                <img class="ulasan-2" src="img/ulasan2.svg" />
+                                                                <img class="testi" src="img/testi2.png" />
+                                                                <img class="stars" src="img/Stars.png" />
+                                                                <p class="bakmi-disini-adalah">
+                                                                    Bakmi disini adalah bakmi putih ato bihun yg tersaji
+                                                                    lezat,,
+                                                                    dan keramahan bapak ibu
+                                                                    penjual menjadi ciri khas tersendiri... Teh gula
+                                                                    batu
+                                                                    terhidang lengkap dengan
+                                                                    &#34;jog&nbsp;&nbsp;blirik&#34; klasik, menambah
+                                                                    cita
+                                                                    rasa
+                                                                    mantap... Mempunyai penggemar
+                                                                    dan pelanggan setia, terlayani hingga tengah
+                                                                    malam...
+                                                                    bernuansa pedesaan asli melengkapi
+                                                                    atmosfir klasik yg original...
+                                                                </p>
+                                                                <div class="text-wrapper-15">Bayu Hapsoro</div>
+                                                                <div class="text-wrapper-16">2021</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="group-8">
+                                                            <div class="overlap-group-5">
+                                                                <img class="ulasan-2" src="img/ulasan2.svg" />
+                                                                <img class="testi-2" src="img/testi1.png" />
+                                                                <img class="stars-2" src="img/Stars.png" />
+                                                                <p class="text-wrapper-17">
+                                                                    Makan bakmi jawa godog dan rica balungan di tengah
+                                                                    desa.
+                                                                    Bakul e super ramah dan bisa
+                                                                    diajak curhat
+                                                                </p>
+                                                                <div class="text-wrapper-18">Aloysia Yossy</div>
+                                                                <div class="text-wrapper-19">2024</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="group-9">
+                                                            <div class="overlap-group-5">
+                                                                <img class="ulasan-2" src="img/ulasan2.svg" />
+                                                                <img class="testi" src="img/testi2.png" />
+                                                                <img class="stars" src="img/Stars.png" />
+                                                                <p class="bakmi-disini-adalah">
+                                                                    Bakmi disini adalah bakmi putih ato bihun yg tersaji
+                                                                    lezat,,
+                                                                    dan keramahan bapak ibu
+                                                                    penjual menjadi ciri khas tersendiri... Teh gula
+                                                                    batu
+                                                                    terhidang lengkap dengan
+                                                                    &#34;jog&nbsp;&nbsp;blirik&#34; klasik, menambah
+                                                                    cita
+                                                                    rasa
+                                                                    mantap... Mempunyai penggemar
+                                                                    dan pelanggan setia, terlayani hingga tengah
+                                                                    malam...
+                                                                    bernuansa pedesaan asli melengkapi
+                                                                    atmosfir klasik yg original...
+                                                                </p>
+                                                                <div class="text-wrapper-15">Bayu Hapsoro</div>
+                                                                <div class="text-wrapper-16">2021</div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -213,7 +244,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="text-wrapper-20">Rating Pengunjung</div>
+                            <div id="rating" class="text-wrapper-20">Rating Pengunjung</div>
                             <p class="kepuasan-pengunjung">
                                 Kepuasan pengunjung adalah prioritas utama kami.<br />
                                 Terima kasih telah mempercayakan selera Anda kepada kami, kami akan terus berusaha untuk
@@ -230,11 +261,13 @@
                                 <div class="group-11">
                                     <div class="group-12">
                                         <div class="overlap-group-6">
-                                            <div class="overlap-11">
-                                                <div class="rectangle-6"></div>
-                                                <div class="text-wrapper-21">Kirim</div>
-                                            </div>
-                                            <div class="text-wrapper-22">Masukkan Pesan Anda</div>
+                                            <a href="https://wa.me/6281770434757">
+                                                <div class="overlap-11">
+                                                    <div class="rectangle-6"></div>
+                                                    <div class="text-wrapper-21">Kirim</div>
+                                                </div>
+                                            </a>
+                                            <input type="text" class="text-wrapper-22" placeholder="Masukkan Pesan Anda" />
                                         </div>
                                     </div>
                                 </div>
@@ -242,7 +275,7 @@
                             </div>
                         </div>
                         <div class="copyrighter-section">
-                            <p class="text-wrapper-24">
+                            <p id="kontak" class="text-wrapper-24">
                                 Bakmi Pak Sandiyo Legendaris berdiri sejak tahun 1995, bermula dari sebuah dapur
                                 sederhana di daerah
                                 Paker, Bantul, Yogy.........selengkapnya
@@ -267,10 +300,10 @@
                             </div>
                             <div class="group-16">
                                 <div class="overlap-13">
-                                    <img class="instagram" src="img/icons8-instagram-2.svg" />
-                                    <img class="image" src="img/image-3.png" />
+                                    <img class="instagram" src="img/gmap.png" />
+                                    <img class="image" src="img/gofood.png" />
                                     <div class="group-17">
-                                        <div class="facebook"><img class="image-2" src="img/image-1.png" /></div>
+                                        <div class="facebook"><img class="image-2" src="img/gofood.png" /></div>
                                         <div class="facebook-2"></div>
                                         <div class="facebook-3"></div>
                                         <div class="text-wrapper-25">FOLLOW US</div>
@@ -288,7 +321,7 @@
                                 </div>
                             </div>
                             <div class="bakmi-pak-sandiyo">Bakmi Pak sandiyo Legendaris</div>
-                            <img class="mbahkakung-3" src="img/mbahkakung1-1.png" />
+                            <img class="mbahkakung-3" src="img/logobawah.png" />
                         </div>
                     </div>
                 </div>

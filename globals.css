@@ -9,6 +9,7 @@ html,
 body {
     margin: 0px;
     height: 100%;
+    margin-left: 0px;
 }
 
 /* a blue color as a generic focus style */

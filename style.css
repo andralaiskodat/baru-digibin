@@ -6,6 +6,52 @@
     width: 100%;
 }
 
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.judul-wrapper {
+    margin-top: 230px;
+    animation: fadeSlideUp 1s ease-out;
+}
+
+.judul-utama {
+    font-size: 70px;
+    font-weight: 900;
+    color: black;
+    font-style: italic;
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    animation: fadeSlideUp 1s ease-out 0.2s both;
+}
+
+.judul-sub {
+    font-size: 60px;
+    font-weight: bold;
+    color: #e06617;
+    font-style: italic;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    animation: fadeSlideUp 1s ease-out both;
+}
+
+.judul-sub:nth-of-type(2) {
+    animation-delay: 0.4s;
+}
+
+.judul-sub:nth-of-type(3) {
+    animation-delay: 0.6s;
+}
+
+
 .landing-page-fix .overlap-wrapper {
     background-color: #ffffff;
     width: 1440px;
@@ -59,7 +105,7 @@
     color: #101a24;
     font-size: 78px;
     letter-spacing: 0;
-    line-height: 65px;
+    line-height: 75px;
 }
 
 .landing-page-fix .p {
@@ -80,8 +126,9 @@
     width: 892px;
     height: 1234px;
     top: 0;
-    left: 444px;
+    left: 680px;
     object-fit: cover;
+    animation: floatUpDown 3s ease-in-out infinite;
 }
 
 .landing-page-fix .page-wrapper {
@@ -129,6 +176,21 @@
     left: 0;
     object-fit: cover;
 }
+.landing-page-fix .lokasi {
+    position: absolute;
+    width: 95px;
+    height: 74px;
+    top: 0;
+    right: 0%;
+    object-fit: cover;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.lokasi:hover{
+    transform: scale(1.1);
+}
 
 .landing-page-fix .overlap-3 {
     position: absolute;
@@ -140,23 +202,57 @@
 
 .landing-page-fix .mbahkakung-2 {
     position: absolute;
-    width: 960px;
-    height: 958px;
-    top: 0;
-    left: 380px;
+    width: 1000px;
+    height: 1000px;
+    left: 470px;
     object-fit: cover;
+    animation: floatUpDown 3s ease-in-out infinite;
+}
+
+/* Keyframe animasi mengambang */
+@keyframes floatUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
 }
 
 .landing-page-fix .navbar {
+    display: flex;
     position: absolute;
+    justify-content: center;
+    text-align: center;
     width: 445px;
     height: 29px;
-    top: 14px;
-    left: 426px;
+    top: 19px;
+    left: 500px;
 }
 
+.landing-page-fix .navbar2 {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    z-index: 999;
+    /* agar muncul di atas elemen lain */
+    background-color: white;
+    /* ganti sesuai warna background header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* bayangan agar terlihat jelas */
+}
+
+
 .landing-page-fix .text-wrapper-3 {
-    left: 0;
+    left: 0px;
     position: absolute;
     top: 0;
     font-family: "Inter-Regular", Helvetica;
@@ -169,7 +265,7 @@
 }
 
 .landing-page-fix .text-wrapper-4 {
-    left: 184px;
+    left: 220px;
     position: absolute;
     top: 0;
     font-family: "Inter-Regular", Helvetica;
@@ -182,7 +278,7 @@
 }
 
 .landing-page-fix .text-wrapper-5 {
-    left: 278px;
+    left: 340px;
     position: absolute;
     top: 0;
     font-family: "Inter-Regular", Helvetica;
@@ -197,7 +293,7 @@
 .landing-page-fix .text-wrapper-6 {
     position: absolute;
     top: 0;
-    left: 374px;
+    left: 460px;
     font-family: "Inter-Regular", Helvetica;
     font-weight: 400;
     color: #101a24;
@@ -208,7 +304,7 @@
 }
 
 .landing-page-fix .text-wrapper-7 {
-    left: 93px;
+    left: 120px;
     position: absolute;
     top: 0;
     font-family: "Inter-Regular", Helvetica;
@@ -280,6 +376,14 @@
     position: absolute;
     width: 411px;
     height: 126px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.div-wrapper:hover {
+    transform: scale(1.1);
+    /* Membesar 10% */
 }
 
 .landing-page-fix .overlap-4 {
@@ -353,7 +457,7 @@
     position: relative;
     width: 1333px;
     height: 400px;
-    background-image: url(./img/shape-1.png);
+    background-image: url(./img/shape1.png);
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -403,6 +507,21 @@
     top: 0;
     left: 976px;
 }
+
+/* Efek hover untuk semua kartu menu */
+.overlap-group-4,
+.overlap-7 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    /* opsional: sudut membulat */
+}
+
+.overlap-group-4:hover,
+.overlap-7:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
 
 .landing-page-fix .overlap-group-4 {
     position: relative;
@@ -477,7 +596,7 @@
     position: absolute;
     width: 264px;
     height: 309px;
-    top: 145px;
+    top: 141px;
     left: 40px;
 }
 
@@ -518,14 +637,14 @@
 .landing-page-fix .overlap-7 {
     position: relative;
     width: 344px;
-    height: 445px;
+    height: 455px;
 }
 
 .landing-page-fix .rectangle-4 {
     position: absolute;
     width: 264px;
     height: 309px;
-    top: 136px;
+    top: 133px;
     left: 40px;
 }
 
@@ -573,6 +692,14 @@
     position: absolute;
     width: 411px;
     height: 126px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.navigation-button-2:hover {
+    transform: scale(1.1);
+    /* Membesar 10% */
 }
 
 .landing-page-fix .frame-3 {
@@ -613,8 +740,8 @@
 
 .landing-page-fix .rectangle-5 {
     position: absolute;
-    width: 1514px;
-    height: 954px;
+    width: 1500px;
+    height: 1000px;
     top: 0;
     left: 0;
     background-color: #f4f4f4;
@@ -622,11 +749,12 @@
 
 .landing-page-fix .masakan {
     position: absolute;
-    width: 543px;
+    width: px;
     height: 931px;
     top: 65px;
     left: 1px;
     object-fit: cover;
+    opacity: 50%;
 }
 
 .landing-page-fix .frame-wrapper {
@@ -642,6 +770,7 @@
     width: 0;
     display: none;
 }
+
 
 .landing-page-fix .group-wrapper {
     width: 1435px;
@@ -814,7 +943,7 @@
 
 .landing-page-fix .text-wrapper-20 {
     position: absolute;
-    width: 506px;
+    width: 700px;
     top: 65px;
     left: 752px;
     font-family: "David Libre-Bold", Helvetica;
@@ -908,6 +1037,13 @@
     height: 59px;
     top: 12px;
     left: 536px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.overlap-11:hover{
+    transform: scale(1.1);
 }
 
 .landing-page-fix .rectangle-6 {
@@ -936,19 +1072,14 @@
 }
 
 .landing-page-fix .text-wrapper-22 {
-    position: absolute;
-    width: 209px;
-    top: 30px;
-    left: 24px;
-    opacity: 0.5;
-    font-family: "Inter-Regular", Helvetica;
-    font-weight: 400;
-    color: #101a24;
-    font-size: 18px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-}
+    width: 100%;
+    max-width: 830px;
+    padding: 31px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    resize: vertical; /* biarkan user ubah ukuran jika pakai textarea */
+    }
 
 .landing-page-fix .text-wrapper-23 {
     position: absolute;
@@ -1258,4 +1389,35 @@
     top: 0;
     left: 0;
     object-fit: cover;
+}
+
+.ulasan-wrapper {
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.ulasan-track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: scrollUlasan 30s linear infinite;
+}
+
+.group-6 {
+    display: flex;
+    gap: 40px;
+}
+
+@keyframes scrollUlasan {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* ubah sesuai kebutuhan */
+    }
 }
