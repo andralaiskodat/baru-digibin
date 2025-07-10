@@ -61,7 +61,6 @@
 .landing-page-fix .overlap {
     position: relative;
     height: 5175px;
-    background-image: url(./img/bg.png);
     background-size: 100% 100%;
 }
 
@@ -89,16 +88,11 @@
     left: 104px;
 }
 
-.landing-page-fix .div {
-    position: relative;
-    width: 1336px;
-    height: 1234px;
-}
 
 .landing-page-fix .text-wrapper {
     position: absolute;
     width: 559px;
-    top: 159px;
+    top: 110px;
     left: 2px;
     font-family: "David Libre-Bold", Helvetica;
     font-weight: 700;
@@ -109,7 +103,7 @@
 }
 
 .landing-page-fix .p {
-    width: 786px;
+    width: 720px;
     top: 389px;
     left: 0;
     font-family: "Inter-Regular", Helvetica;
@@ -124,9 +118,9 @@
 .landing-page-fix .mbahkakung {
     position: absolute;
     width: 892px;
-    height: 1234px;
+    height: 1100px;
     top: 0;
-    left: 680px;
+    left: 600px;
     object-fit: cover;
     animation: floatUpDown 3s ease-in-out infinite;
 }
@@ -176,6 +170,7 @@
     left: 0;
     object-fit: cover;
 }
+
 .landing-page-fix .lokasi {
     position: absolute;
     width: 95px;
@@ -183,12 +178,12 @@
     top: 0;
     right: 0%;
     object-fit: cover;
-    display: inline-block;
+    display: flex;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
-.lokasi:hover{
+.lokasi:hover {
     transform: scale(1.1);
 }
 
@@ -376,7 +371,7 @@
     position: absolute;
     width: 411px;
     height: 126px;
-    display: inline-block;
+    display: flex;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
@@ -489,9 +484,11 @@
 .landing-page-fix .menu {
     position: absolute;
     width: 1320px;
-    height: 455px;
+    height: 500px;
+    background-color: #e06617;
     top: 434px;
     left: 60px;
+    border-radius: 30px;
 }
 
 .landing-page-fix .overlap-6 {
@@ -692,7 +689,7 @@
     position: absolute;
     width: 411px;
     height: 126px;
-    display: inline-block;
+    display: flex;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
@@ -721,14 +718,6 @@
     position: relative;
     width: 1747px;
     height: 996px;
-}
-
-.landing-page-fix .ulasan {
-    position: absolute;
-    width: 1747px;
-    height: 996px;
-    top: 0;
-    left: 0;
 }
 
 .landing-page-fix .overlap-9 {
@@ -760,7 +749,7 @@
 .landing-page-fix .frame-wrapper {
     position: absolute;
     width: 1435px;
-    height: 448px;
+    height: 510px;
     top: 307px;
     left: 101px;
     overflow-x: scroll;
@@ -768,7 +757,7 @@
 
 .landing-page-fix .frame-wrapper::-webkit-scrollbar {
     width: 0;
-    display: none;
+    display: flex;
 }
 
 
@@ -1042,7 +1031,7 @@
     cursor: pointer;
 }
 
-.overlap-11:hover{
+.overlap-11:hover {
     transform: scale(1.1);
 }
 
@@ -1078,8 +1067,9 @@
     font-size: 16px;
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
-    resize: vertical; /* biarkan user ubah ukuran jika pakai textarea */
-    }
+    resize: vertical;
+    /* biarkan user ubah ukuran jika pakai textarea */
+}
 
 .landing-page-fix .text-wrapper-23 {
     position: absolute;
@@ -1419,5 +1409,47 @@
     100% {
         transform: translateX(-50%);
         /* ubah sesuai kebutuhan */
+    }
+}
+
+.fixed-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 999;
+}
+
+.fixed-btn {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+}
+
+.fixed-btn img {
+    width: 28px;
+    height: 28px;
+}
+
+/* Responsif Tambahan */
+@media screen and (max-width: 480px) {
+    .fixed-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .fixed-btn img {
+        width: 40px;
+        height: 40px;
     }
 }

@@ -67,11 +67,16 @@
                                             <img class="lokasi" src="img/gmap.png" />
                                         </a>
                                         <div class="navbar">
-                                            <div class="text-wrapper-3"> <a href="#beranda" style="color: black;">Beranda</a></div>
-                                            <div class="text-wrapper-4"><a href="#Sejarah" style="color: black;">Tentang</a></div>
-                                            <div class="text-wrapper-5"><a href="#rating" style="color: black;">Rating</a></div>
-                                            <div class="text-wrapper-6"><a href="#kontak" style="color: black;">Kontak</a></div>
-                                            <div class="text-wrapper-7"><a href="#menu" style="color: black;">Menu</a></div>
+                                            <div class="text-wrapper-3"> <a href="#beranda"
+                                                    style="color: black;">Beranda</a></div>
+                                            <div class="text-wrapper-4"><a href="#Sejarah"
+                                                    style="color: black;">Tentang</a></div>
+                                            <div class="text-wrapper-5"><a href="#rating"
+                                                    style="color: black;">Rating</a></div>
+                                            <div class="text-wrapper-6"><a href="#kontak"
+                                                    style="color: black;">Kontak</a></div>
+                                            <div class="text-wrapper-7"><a href="#menu" style="color: black;">Menu</a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div id="beranda" class="judul-wrapper">
@@ -108,7 +113,6 @@
                                         <div id="menu" class="text-wrapper-10">Menu Spesial</div>
                                     </div>
                                 </div>
-                                <img class="shape" src="img/shape2.png" />
                                 <div class="menu">
                                     <div class="overlap-6">
                                         <div class="group-2">
@@ -267,7 +271,8 @@
                                                     <div class="text-wrapper-21">Kirim</div>
                                                 </div>
                                             </a>
-                                            <input type="text" class="text-wrapper-22" placeholder="Masukkan Pesan Anda" />
+                                            <input type="text" class="text-wrapper-22"
+                                                placeholder="Masukkan Pesan Anda" />
                                         </div>
                                     </div>
                                 </div>
@@ -328,6 +333,53 @@
             </div>
         </div>
     </div>
+    <!-- Tombol Fixed -->
+    <div class="fixed-buttons">
+        <!-- Lokasi -->
+        <a href="https://www.google.com/maps?q=Bakmi+Pak+Sandiyo" target="_blank" class="fixed-btn lokasi"
+            title="Lihat Lokasi">
+            <img src="img/gmap.png" alt="Lokasi" />
+        </a>
+
+        <!-- Share -->
+        <button class="fixed-btn share" title="Bagikan Website" onclick="shareWebsite()">
+            <img src="img/download.png" alt="Share" />
+        </button>
+    </div>
+    on>
+    </div>
+
+    <script>
+        function shareWebsite() {
+            const shareData = {
+                title: 'Bakmi Pak Sandiyo Legendaris',
+                text: 'Yuk lihat dan pesan Bakmi Pak Sandiyo Legendaris di Bantul!',
+                url: window.location.href
+            };
+
+            if (navigator.share) {
+                navigator.share(shareData)
+                    .then(() => console.log('Berhasil dibagikan!'))
+                    .catch((err) => console.error('Gagal membagikan:', err));
+            } else {
+                // Fallback: Copy URL ke clipboard
+                copyToClipboard(window.location.href);
+                alert('Link disalin ke clipboard. Silakan bagikan secara manual.');
+            }
+        }
+
+        function copyToClipboard(text) {
+            const tempInput = document.createElement("input");
+            document.body.appendChild(tempInput);
+            tempInput.setAttribute("value", text);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+        }
+    </script>
+
+
+
 </body>
 
 </html>
