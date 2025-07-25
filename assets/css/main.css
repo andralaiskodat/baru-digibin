@@ -1033,6 +1033,7 @@ section,
 }
 
 .about .about-image {
+  height: 700px;
   border-radius: 8px;
   overflow: hidden;
 }
